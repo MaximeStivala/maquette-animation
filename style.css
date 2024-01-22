@@ -1,0 +1,173 @@
+/* Import des polices */
+@font-face {
+    font-family: 'Roboto Mono Bold';
+    src: url(./fonts/RobotoMono-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto Mono Regular';
+    src: url(./fonts/RobotoMono-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto Mono Medium';
+    src: url(./fonts/RobotoMono-Medium.ttf);
+    font-weight: 500;
+}
+
+/* Charte graphique */
+:root{
+    --mainColor: #333333;
+    --secondaryColor: #FFFFFF;
+    --boxColor1: #f1c2b0;
+    --boxColor2: #f9eb98;
+    --boxColor3: #c0d9dd;
+    --boxColor4: #6975e8;
+}
+
+html, body, *{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+.Top{
+    display: flex;
+    justify-content: center;
+    padding: 100px 250px;
+}
+
+.topText, button{
+    padding: 25px 0;
+}
+
+h1{
+    font-family: 'Roboto Mono Bold';
+    font-size: 60px;
+}
+
+.topText, .boxText{
+    font-family: 'Roboto Mono Regular';
+}
+
+.topText{
+    font-size: 24px;
+}
+
+button{
+    border-radius: 40px;
+    border: none;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    padding: 15px 25px;
+    font-size: 22px;
+}
+
+.Bot{
+    display: flex;
+    justify-content: center;
+}
+
+#Bloc1, #Bloc2, #Bloc3, #Bloc4{
+    border-radius: 16px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.boxText{
+    color: var(--mainColor);
+    font-size: 18px;
+}
+
+h2, h3, button{
+    font-family: 'Roboto Mono Medium';
+}
+
+h2{
+    color: var(--secondaryColor);
+    font-size: 64px;
+}
+
+h3{
+    color: var(--mainColor);
+    font-size: 32px;
+}
+
+/* Couleur Bloc */
+
+#Bloc1{
+    background-color: var(--boxColor1);
+}
+
+#Bloc2{
+    background-color: var(--boxColor2);
+}
+
+#Bloc3{
+    background-color: var(--boxColor3);
+}
+
+#Bloc4{
+    background-color: var(--boxColor4);
+}
+
+/* animations */
+
+h2:hover,#Bloc1:hover,#Bloc2:hover,#Bloc3:hover,#Bloc4:hover,button:hover{
+    transition: 300ms;
+}
+
+button:hover{
+    color: var(--mainColor);
+}
+
+/* Bloc général */
+
+#Bloc1:hover,#Bloc2:hover,#Bloc3:hover,#Bloc4:hover,button:hover{
+    background-color: var(--secondaryColor);
+    border: 2px solid;
+}
+
+/* Survol border bloc */
+
+#Bloc1:hover{
+    border-color: var(--boxColor1);
+}
+
+#Bloc2:hover{
+    border-color: var(--boxColor2);
+}
+
+#Bloc3:hover{
+    border-color: var(--boxColor3);
+}
+
+#Bloc4:hover{
+    border-color: var(--boxColor4);
+}
+
+/* Survol nombre */
+
+#Bloc1:hover #number1{
+    color: var(--boxColor1);
+}
+
+#Bloc2:hover #number2{
+    color: var(--boxColor2);
+}
+
+#Bloc3:hover #number3{
+    color: var(--boxColor3);
+}
+
+#Bloc4:hover #number4{
+    color: var(--boxColor4);
+}
+
+
